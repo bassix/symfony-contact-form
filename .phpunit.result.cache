@@ -1,0 +1,1 @@
+{"version":2,"defects":[],"times":{"App\\Tests\\Service\\FormContactServiceTest::testSaveAddsMetadata":0.027,"App\\Tests\\Service\\FormContactServiceTest::testFindById":0.003,"App\\Tests\\Service\\MailManServiceTest::testSendContactEmail":0.007,"App\\Tests\\Service\\MailManServiceTest::testSendContactEmailWithoutSubject":0.001}}
