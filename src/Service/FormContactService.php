@@ -21,7 +21,8 @@ class FormContactService
         $request = $this->requestStack->getCurrentRequest();
         
         if ($request) {
-            // Store IP address
+            // Store IP address (Note: getClientIp() can be influenced by proxy headers)
+            // In production, validate or use getTrustedProxies() if behind a load balancer
             $ipMeta = new FormSubmissionMeta();
             $ipMeta->setMetaKey('ip_address');
             $ipMeta->setMetaValue($request->getClientIp() ?? 'unknown');
